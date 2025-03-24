@@ -113,6 +113,11 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
+ifneq (,$(filter %beckham %evert %lake %messi, $(TARGET_PRODUCT)))
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+endif
+
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/fsg:/fsg
 

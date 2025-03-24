@@ -199,6 +199,9 @@ PRODUCT_COPY_FILES += \
 # Moto Live Wallpapers 3
 $(call inherit-product, vendor/motorola/MotoLiveWallpaper3/motolivewallpaper3.mk)
 
+# Moto Time Weather
+$(call inherit-product, vendor/motorola/TimeWeather/timeweather.mk)
+
 # MotoActions
 PRODUCT_PACKAGES += \
     MotoActions \

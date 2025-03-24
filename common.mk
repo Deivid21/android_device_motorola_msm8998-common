@@ -195,6 +195,10 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
 
+# Moto Apps
+TARGET_USES_COMPASS := true
+$(call inherit-product, vendor/motorola/MotApps/motapps.mk)
+
 # Moto Audio Recorder
 $(call inherit-product, vendor/motorola/AudioRecorder/audiorecorder.mk)
 

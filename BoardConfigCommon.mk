@@ -105,7 +105,7 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_COPY_OUT_VENDOR := vendor
 
-ifneq (,$(filter %beckham %chef %evert %lake %messi, $(TARGET_PRODUCT)))
+ifneq (,$(filter %beckham %chef %evert %lake %messi, $(TARGET_DEVICE)))
 BOARD_SYSTEM_EXTIMAGE_EXTFS_INODE_COUNT := 4096
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := squashfs
 BOARD_SYSTEM_EXTIMAGE_JOURNAL_SIZE := 0
